@@ -8,7 +8,7 @@ class Book {
 
 //UI Class
 class UI{
-    static displayBook(){
+    static displayBooks(){
         const StoredBooks = [
             {
                 title: 'The One Thing',
@@ -32,6 +32,11 @@ class UI{
         <td>${book.title}</td>
         <td>${book.author}</td>
         <td>${book.isbn}</td>
-        <td><a href='#' class='btn btn-danger btn-sm delete'>X</a></td>
+        <td><a href='#' class='btn btn-danger btn-sm delete'>X</a></td>`;
+
+        list.appendChild(row);
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', UI.displayBooks);
